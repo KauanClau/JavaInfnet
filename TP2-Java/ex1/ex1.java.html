@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>ex1.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ex1.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+<span class="s0">public class </span><span class="s1">ex1 </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Scanner sc </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Digite seu Nome completo: &quot;</span><span class="s2">);</span>
+        <span class="s1">String nome </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Idade: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">idade </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">sc</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Nome da mãe: &quot;</span><span class="s2">);</span>
+        <span class="s1">String mae </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Nome do pai: &quot;</span><span class="s2">);</span>
+        <span class="s1">String pai </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+
+        <span class="s0">int </span><span class="s1">tamanhoNomeUsuario </span><span class="s2">= </span><span class="s1">nome</span><span class="s2">.</span><span class="s1">length</span><span class="s2">();</span>
+        <span class="s0">int </span><span class="s1">tamanhoNomeMae </span><span class="s2">= </span><span class="s1">mae</span><span class="s2">.</span><span class="s1">length</span><span class="s2">();</span>
+        <span class="s0">int </span><span class="s1">tamanhoNomePai </span><span class="s2">= </span><span class="s1">pai</span><span class="s2">.</span><span class="s1">length</span><span class="s2">();</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">tamanhoNomeUsuario </span><span class="s2">&gt; </span><span class="s1">tamanhoNomeMae </span><span class="s2">&amp;&amp; </span><span class="s1">tamanhoNomeUsuario </span><span class="s2">&gt; </span><span class="s1">tamanhoNomePai</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Legal! O seu nome tem mais letras que o nome da sua mãe e o seu pai&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">tamanhoNomeUsuario </span><span class="s2">&gt; </span><span class="s1">tamanhoNomeMae</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;O seu nome tem mais letras que o nome da sua mãe, mas não do seu pai.&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">tamanhoNomeUsuario </span><span class="s2">&gt; </span><span class="s1">tamanhoNomePai</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;O seu nome tem mais letras que o nome do seu pai, mas não da sua mãe.&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;É... o seu nome não tem mais letras que o da sua mãe nem o do seu pai.&quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">sc</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
